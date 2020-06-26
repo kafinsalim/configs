@@ -1,0 +1,22 @@
+echo "hello kafin, loading conf from .bash_profile_zsh"
+
+# NVM
+#export GOPATH=$HOME/go
+#export GOBIN=$HOME/go/bin
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# android tooling
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export BLOG_MACHINE=kafin@157.245.192.214
+
+source ~/.bash_aliases
+echo "loading alias from .bash_aliases"
+
+# move to code
+cd /Users/admin/Code
